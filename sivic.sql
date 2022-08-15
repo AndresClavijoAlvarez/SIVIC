@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-08-2022 a las 22:33:44
+-- Tiempo de generación: 15-08-2022 a las 22:54:13
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -208,6 +208,195 @@ INSERT INTO `almacen` (`id_almacen`, `id_categoria`, `nombre_almacen`, `logo_alm
 (145, 3, 'OSLON CAFE BAR', './img/almacen/oslon-cafe-bar.png', 'PISO 4', '4K2', '3148274537', '-', 'oslonbar_victoria', '-', '1:30 p.m.', '2:00 a.m.', '1:30 p.m.', '2:00 a.m.', '1:30 p.m.', '2:00 a.m.', '1:30 p.m.', '2:00 a.m.', '1:30 p.m.', '2:30 a.m.', '1:30 p.m.', '2:30 a.m.', '1:30 p.m.', '12:00 a.m.', '1:30 p.m.', '12:00 a.m.'),
 (146, 3, 'SAKE SUSHI BAR', './img/almacen/sake-sushi-bar.png', 'PISO 4', '4K2A', '6063233134', '-', 'sakesushibarpereira', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `almacen_categoria`
+--
+
+CREATE TABLE `almacen_categoria` (
+  `id_categoria` int(4) NOT NULL,
+  `nombre_categoria` varchar(100) NOT NULL,
+  `banner_categoria` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `almacen_categoria`
+--
+
+INSERT INTO `almacen_categoria` (`id_categoria`, `nombre_categoria`, `banner_categoria`) VALUES
+(1, 'Lo Que Necesito Hacer\r\n', './img/lo-que-necesito-hacer-banner.png'),
+(2, 'Lo Que Quiero Comprar', './img/lo-que-quiero-comprar-banner.png'),
+(3, 'Lo Que Me Encanta Hacer\r\n', './img/lo-que-me-encanta-hacer-banner.png'),
+(4, 'Lo Que Quiero Comer', './img/lo-que-quiero-comer-banner.png');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `almacen_promocion`
+--
+
+CREATE TABLE `almacen_promocion` (
+  `id_promocion` int(4) NOT NULL,
+  `nombre_promocion` varchar(100) NOT NULL,
+  `fecha_inicio_promocion` date NOT NULL,
+  `fecha_fin_promocion` date NOT NULL,
+  `descripcion_promocion` varchar(500) NOT NULL,
+  `id_almacen` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `almacen_promocion`
+--
+
+INSERT INTO `almacen_promocion` (`id_promocion`, `nombre_promocion`, `fecha_inicio_promocion`, `fecha_fin_promocion`, `descripcion_promocion`, `id_almacen`) VALUES
+(1, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 1),
+(2, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 2),
+(3, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 3),
+(4, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 4),
+(5, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 5),
+(6, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 6),
+(7, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 7),
+(8, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 8),
+(9, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 9),
+(10, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 10),
+(11, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 11),
+(12, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 12),
+(13, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 13),
+(14, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 14),
+(15, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\r\nHasta agotar Existencias', 15),
+(16, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 16),
+(17, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 17),
+(18, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 18),
+(19, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 19),
+(20, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 20),
+(21, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 21),
+(22, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 22),
+(23, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 23),
+(24, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 24),
+(25, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 25),
+(26, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 26),
+(27, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 27),
+(28, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 28),
+(29, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 29),
+(30, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 30),
+(31, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 31),
+(32, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 32),
+(33, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 33),
+(34, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 34),
+(35, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 35),
+(36, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 36),
+(37, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 37),
+(38, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 38),
+(39, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 39),
+(40, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 40),
+(41, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 41),
+(42, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 42),
+(43, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 43),
+(44, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 44),
+(45, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 45),
+(46, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 46),
+(47, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 47),
+(48, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 48),
+(49, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 49),
+(50, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 50),
+(51, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 51),
+(52, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 52),
+(53, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 53),
+(54, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 54),
+(55, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 55),
+(56, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 56),
+(57, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 57),
+(58, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 58),
+(59, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 59),
+(60, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 60),
+(61, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 61),
+(62, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 62),
+(63, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 63),
+(64, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 64),
+(65, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 65),
+(66, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 66),
+(67, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 67),
+(68, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 68),
+(69, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 69),
+(70, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 70),
+(71, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 71),
+(72, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 72),
+(73, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 73),
+(74, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 74),
+(75, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 75),
+(76, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 76),
+(77, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 77),
+(78, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 78),
+(79, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 79),
+(80, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 80),
+(81, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 81),
+(82, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 82),
+(83, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 83),
+(84, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 84),
+(85, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 85),
+(86, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 86),
+(87, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 87),
+(88, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 88),
+(89, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 89),
+(90, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 90),
+(91, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 91),
+(92, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 92),
+(93, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 93),
+(94, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 94),
+(95, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 95),
+(96, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 96),
+(97, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 97),
+(98, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 98),
+(99, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 99),
+(100, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 100),
+(101, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 101),
+(102, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 102),
+(103, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 103),
+(104, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 104),
+(105, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 105),
+(106, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 106),
+(107, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 107),
+(108, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 108),
+(109, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 109),
+(110, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 110),
+(111, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 111),
+(112, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 112),
+(113, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 113),
+(114, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 114),
+(115, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 115),
+(116, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 116),
+(117, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 117),
+(118, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 118),
+(119, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 119),
+(120, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 120),
+(121, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 121),
+(122, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 122),
+(123, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 123),
+(124, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 124),
+(125, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 125),
+(126, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 126),
+(127, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 127),
+(128, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 128),
+(129, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 129),
+(130, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 130),
+(131, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 131),
+(132, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 132),
+(133, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 133),
+(134, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 134),
+(135, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 135),
+(136, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 136),
+(137, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 137),
+(138, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 138),
+(139, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 139),
+(140, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 140),
+(141, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 141),
+(142, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 142),
+(143, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 143),
+(144, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 144),
+(145, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 145),
+(146, 'Pague 1 Lleve 2', '2022-08-15', '2022-08-31', 'Pague Uno Lleve Dos\nHasta agotar Existencias', 146);
+
 --
 -- Índices para tablas volcadas
 --
@@ -219,6 +408,18 @@ ALTER TABLE `almacen`
   ADD PRIMARY KEY (`id_almacen`) USING BTREE;
 
 --
+-- Indices de la tabla `almacen_categoria`
+--
+ALTER TABLE `almacen_categoria`
+  ADD PRIMARY KEY (`id_categoria`);
+
+--
+-- Indices de la tabla `almacen_promocion`
+--
+ALTER TABLE `almacen_promocion`
+  ADD PRIMARY KEY (`id_promocion`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -227,6 +428,18 @@ ALTER TABLE `almacen`
 --
 ALTER TABLE `almacen`
   MODIFY `id_almacen` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
+
+--
+-- AUTO_INCREMENT de la tabla `almacen_categoria`
+--
+ALTER TABLE `almacen_categoria`
+  MODIFY `id_categoria` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT de la tabla `almacen_promocion`
+--
+ALTER TABLE `almacen_promocion`
+  MODIFY `id_promocion` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
