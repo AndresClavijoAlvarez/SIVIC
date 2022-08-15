@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-08-2022 a las 18:15:46
+-- Tiempo de generación: 15-08-2022 a las 22:33:44
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -161,7 +161,7 @@ INSERT INTO `almacen` (`id_almacen`, `id_categoria`, `nombre_almacen`, `logo_alm
 (98, 2, 'DIANA PALOMINO PLATERIA', './img/almacen/diana-palomino-plateria.png', 'PISO 3', '3K4 ', '3113406592', 'dianapaominoplateria', 'dianapalomino_plateria', '-', '10:00 a.m.', '8:00 p.m.', '10:00 a.m.', '8:00 p.m.', '10:00 a.m.', '8:00 p.m.', '10:00 a.m.', '8:00 p.m.', '10:00 a.m.', '9:00 p.m.', '10:00 a.m.', '9:00 p.m.', '11:00 a.m.', '7:00 p.m.', '11:00 a.m.', '7:00 p.m.'),
 (99, 4, 'DULCE CHURRO', './img/almacen/dulce-churro.png', 'PISO 3', '3K12', '3216353380', 'dulcechurrospereira', 'dulcechurrospereia', '-', '12:00 p.m.', '8:00 p.m.', '12:00 p.m.', '8:00 p.m.', '12:00 p.m.', '8:00 p.m.', '12:00 p.m.', '8:00 p.m.', '12:00 p.m.', '9:00 p.m.', '12:00 p.m.', '9:00 p.m.', '12:00 p.m.', '7:00 p.m.', '12:00 p.m.', '7:00 p.m.'),
 (100, 4, 'DUNKIN DONUTS', './img/almacen/dunkin-donuts.png', 'PISO 3', '3K1', '6063253227', '-', 'dunkindonuts', '-', '7:30 a.m.', '8:30 p.m.', '7:30 a.m.', '8:30 p.m.', '7:30 a.m.', '8:30 p.m.', '7:30 a.m.', '8:30 p.m.', '7:30 a.m.', '8:30 p.m.', '7:30 a.m.', '8:30 p.m.', '7:30 a.m.', '8:30 p.m.', '7:30 a.m.', '8:30 p.m.'),
-(101, 4, 'EL SABOR ANTIOQUE?O', './img/almacen/el-sabor-antioque?o.png', 'PISO 3', '324', '6063346162', 'el_sabor_antioque', '-', '-', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.'),
+(101, 4, 'EL SABOR ANTIOQUEÑO', './img/almacen/el-sabor-antioqueño.png', 'PISO 3', '324', '6063346162', 'el_sabor_antioque', '-', '-', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.', '11:00 a.m.', '9:00 p.m.'),
 (102, 4, 'FRIJOLES Y MONDONGOS', './img/almacen/frijoles-y-mondongos.png', 'PISO 3', '300A', '3146260713', '-', 'frijolesymondongos', '-', '11:30 a.m.', '9:00 p.m.', '11:30 a.m.', '9:00 p.m.', '11:30 a.m.', '9:00 p.m.', '11:30 a.m.', '9:00 p.m.', '11:30 a.m.', '9:00 p.m.', '11:30 a.m.', '9:00 p.m.', '11:30 a.m.', '9:00 p.m.', '11:30 a.m.', '9:00 p.m.'),
 (103, 4, 'FRISBY', './img/almacen/frisby.png', 'PISO 3', '303', '3147170119', '-', '-', '-', '6:00 a.m.', '9:00 p.m.', '6:00 a.m.', '9:00 p.m.', '6:00 a.m.', '9:00 p.m.', '6:00 a.m.', '9:00 p.m.', '6:00 a.m.', '9:00 p.m.', '6:00 a.m.', '9:00 p.m.', '8:00 a.m.', '9:00 p.m.', '8:00 a.m.', '9:00 p.m.'),
 (104, 4, 'FRUVITA', './img/almacen/fruvita.png', 'PISO 3', '317', '3104070453', 'heladofruvita', 'fruvitahelado', '-', '11:00 a.m.', '8:00 p.m.', '11:00 a.m.', '8:00 p.m.', '11:00 a.m.', '8:00 p.m.', '11:00 a.m.', '8:00 p.m.', '11:00 a.m.', '8:00 p.m.', '11:00 a.m.', '8:00 p.m.', '11:00 a.m.', '8:00 p.m.', '11:00 a.m.', '8:00 p.m.'),
@@ -208,51 +208,6 @@ INSERT INTO `almacen` (`id_almacen`, `id_categoria`, `nombre_almacen`, `logo_alm
 (145, 3, 'OSLON CAFE BAR', './img/almacen/oslon-cafe-bar.png', 'PISO 4', '4K2', '3148274537', '-', 'oslonbar_victoria', '-', '1:30 p.m.', '2:00 a.m.', '1:30 p.m.', '2:00 a.m.', '1:30 p.m.', '2:00 a.m.', '1:30 p.m.', '2:00 a.m.', '1:30 p.m.', '2:30 a.m.', '1:30 p.m.', '2:30 a.m.', '1:30 p.m.', '12:00 a.m.', '1:30 p.m.', '12:00 a.m.'),
 (146, 3, 'SAKE SUSHI BAR', './img/almacen/sake-sushi-bar.png', 'PISO 4', '4K2A', '6063233134', '-', 'sakesushibarpereira', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-');
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `almacen_categoria`
---
-
-CREATE TABLE `almacen_categoria` (
-  `id_categoria` int(4) NOT NULL,
-  `nombre_categoria` varchar(100) NOT NULL,
-  `banner_categoria` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `almacen_categoria`
---
-
-INSERT INTO `almacen_categoria` (`id_categoria`, `nombre_categoria`, `banner_categoria`) VALUES
-(1, 'Lo Que Necesito Hacer\r\n', './img/lo-que-necesito-hacer-banner.png'),
-(2, 'Lo Que Quiero Comprar', './img/lo-que-quiero-comprar-banner.png'),
-(3, 'Lo Que Me Encanta Hacer\r\n', './img/lo-que-me-encanta-hacer-banner.png'),
-(4, 'Lo Que Quiero Comer', './img/lo-que-quiero-comer-banner.png');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `almacen_promocion`
---
-
-CREATE TABLE `almacen_promocion` (
-  `id_promocion` int(4) NOT NULL,
-  `nombre_promocion` varchar(100) NOT NULL,
-  `fecha_inicio_promocion` date NOT NULL,
-  `fecha_fin_promocion` date NOT NULL,
-  `descripcion_promocion` varchar(500) NOT NULL,
-  `id_almacen` int(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `almacen_promocion`
---
-
-INSERT INTO `almacen_promocion` (`id_promocion`, `nombre_promocion`, `fecha_inicio_promocion`, `fecha_fin_promocion`, `descripcion_promocion`, `id_almacen`) VALUES
-(1, 'Pague 1 Envie 2', '2022-08-11', '2022-08-13', 'Envia 2 paquetes tipo documento por el precio de 1.', 84),
-(3, '30% Descuento en Sobres', '2022-08-10', '2022-08-15', '30% de descuento en sobres de documentos.', 84);
-
 --
 -- Índices para tablas volcadas
 --
@@ -264,18 +219,6 @@ ALTER TABLE `almacen`
   ADD PRIMARY KEY (`id_almacen`) USING BTREE;
 
 --
--- Indices de la tabla `almacen_categoria`
---
-ALTER TABLE `almacen_categoria`
-  ADD PRIMARY KEY (`id_categoria`);
-
---
--- Indices de la tabla `almacen_promocion`
---
-ALTER TABLE `almacen_promocion`
-  ADD PRIMARY KEY (`id_promocion`);
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -284,18 +227,6 @@ ALTER TABLE `almacen_promocion`
 --
 ALTER TABLE `almacen`
   MODIFY `id_almacen` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
-
---
--- AUTO_INCREMENT de la tabla `almacen_categoria`
---
-ALTER TABLE `almacen_categoria`
-  MODIFY `id_categoria` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de la tabla `almacen_promocion`
---
-ALTER TABLE `almacen_promocion`
-  MODIFY `id_promocion` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
