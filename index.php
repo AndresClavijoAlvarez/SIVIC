@@ -15,38 +15,35 @@
         ?>
     </head>
     <body>
-        <br>
-        <div class="justify-content-center">
+        <img src="./img/logo-colores.png" height = '400px' class="position-absolute translate-middle top-50 start-50 animate__animated animate__slideInDown">
+        <div class="fixed-top justify-content-center text-center">
+            <br>
             <h1 class="text-center">BIENVENIDOS AL CENTRO COMERCIAL</h1>
-        </div>
-        <div class="text-center">
-            <img src="./img/logo-colores.png" height = '400px' class="animate__animated animate__slideInDown" >
-        </div>
-        <div class="text-center">
+            <br>
             <h3 class="animate__animated animate__slideInDown">¿Que Quieres Hacer hoy?</h3>
         </div>
-        <div class='d-flex flex-row fixed-bottom justify-content-evenly align-items-center mb-4'>
-            <div class='d-flex flex-column p-2 rounded align-items-center'>
+        <div class='container-flex d-flex flex-row fixed-bottom justify-content-evenly align-items-center mb-4'>
+            <div class='d-flex flex-column p-2 rounded align-items-center text-center'>
                 <a href = './locales.php?categoria=1'>    
-                    <img src="./img/lo-que-necesito-hacer.png" alt="LO QUE NECESITO HACER" height = '170px' width = '170px' class="animate__animated animate__pulse animate__infinite">
+                    <img src="./img/lo-que-necesito-hacer.png" alt="LO QUE NECESITO HACER" height = '120px' width = '120px' class="animate__animated animate__pulse animate__infinite">
                 </a>
                 <h5>LO QUE NECESITO HACER</h5>
             </div>
-            <div class='d-flex flex-column p-2 rounded align-items-center'>
+            <div class='d-flex flex-column p-2 rounded align-items-center text-center'>
                 <a href = './locales.php?categoria=2'>
-                    <img src="./img/lo-que-quiero-comprar.png" alt="LO QUE QUIERO COMPRAR" height = '170px' width = '170px' class="animate__animated animate__pulse animate__infinite">
+                    <img src="./img/lo-que-quiero-comprar.png" alt="LO QUE QUIERO COMPRAR" height = '120px' width = '120px' class="animate__animated animate__pulse animate__infinite">
                 </a>
                 <h5>LO QUE QUIERO COMPRAR</h5>
             </div>
-            <div class='d-flex flex-column p-2 rounded align-items-center'>
+            <div class='d-flex flex-column p-2 rounded align-items-center text-center'>
                 <a href = './locales.php?categoria=3'>    
-                    <img src="./img/lo-que-me-encanta-hacer.png" alt="LO QUE ME ENCANTA HACER" height = '170px' width = '170px' class="animate__animated animate__pulse animate__infinite">
+                    <img src="./img/lo-que-me-encanta-hacer.png" alt="LO QUE ME ENCANTA HACER" height = '120px' width = '120px' class="animate__animated animate__pulse animate__infinite">
                 </a>
                 <h5>LO QUE ME ENCANTA HACER</h5>
             </div>
-            <div class='d-flex flex-column p-2 rounded align-items-center'>
+            <div class='d-flex flex-column p-2 rounded align-items-center text-center'>
                 <a href = './locales.php?categoria=4'>
-                    <img src="./img/lo-que-quiero-comer.png" alt="LO QUE QUIERO COMER" height = '170px' width = '170px' class="animate__animated animate__pulse animate__infinite">
+                    <img src="./img/lo-que-quiero-comer.png" alt="LO QUE QUIERO COMER" height = '120px' width = '120px' class="animate__animated animate__pulse animate__infinite">
                 </a>
                 <h5>LO QUE QUIERO COMER</h5>
             </div>

@@ -178,7 +178,7 @@
                                                         <a class='btn btn-info' href='javascript:abrirPromocion".$promocion['id_promocion']."()'>".$promocion['nombre_promocion']."</a>
                                                     </b>
                                                 </div>
-                                                <div class='position-absolute translate-middle top-50 start-50 w-100 h-100 justify-content-center bg-dark text-light border border-1 border-info rounded px-3 animate__animated animate__zoomIn' style='display: none;' id='".$promocion['id_promocion']."'>
+                                                <div class='position-absolute translate-middle top-50 start-50 h-100 justify-content-center bg-dark text-light border border-1 border-info rounded px-3 animate__animated animate__zoomIn' style='display: none; width: 80%;' id='".$promocion['id_promocion']."'>
                                                     <br>
                                                     <a class='btn btn-danger animate__animated animate__shakeX' href='javascript:cerrarPromocion".$promocion['id_promocion']."()'>CERRAR</a>
                                                     <br>
