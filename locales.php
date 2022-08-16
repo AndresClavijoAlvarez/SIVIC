@@ -51,7 +51,7 @@
                                         <a class='img-circle' href='./local-detalles.php?id_almacen=".$resultado_almacenes['id_almacen']."'>
                                             <img class='bd-placeholder-img card-img-top rounded animate__animated animate__zoomIn animate__delay-1s' src='".$resultado_almacenes['logo_almacen']."'></img>
                                         </a>
-                                        <div class='card-body align-content-center'>
+                                        <div class='card-body align-content-around'>
                                             <h6 class='card-text text-light p-0 animate__animated animate__zoomIn animate__delay-1s'>".$resultado_almacenes['nombre_almacen']."</p>
                                         </div>
                                     </div>
